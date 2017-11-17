@@ -1,0 +1,8 @@
+@inproceedings{hang2013hierarchical,
+author = {Hang, Kaiyu and Stork, Johannes A. and Pokorny, Florian T. and 
+Kragic, Danica},
+booktitle = {IEEE ICRA},
+title = {Combinatorial Optimization for Hierarchical Contact-level Grasping},
+year = {2014},
+address = {Hong Kong, China},
+}
