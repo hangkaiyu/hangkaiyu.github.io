@@ -1,0 +1,7 @@
+@inproceedings{hang2014c,
+author = {Hang, Kaiyu and Li, Miao and Stork, Johannes A. and Bekiroglu, Yasemin and Billard, Aude and Kragic, Danica},
+booktitle = {IEEE ICRA, workshop on Autonomous Grasping and Manipulation: An Open Challenge},
+title = {Hierarchical Fingertip Space for Synthesizing Adaptable Fingertip Grasps},
+year = {2014},
+ address = {Chicago, US},
+}

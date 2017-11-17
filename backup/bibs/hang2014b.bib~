@@ -1,0 +1,7 @@
+@inproceedings{hang2014fts,
+author = {Hang, Kaiyu and Stork, Johannes A. and Kragic, Danica},
+booktitle = {IEEE/RSJ IROS},
+title = {Hierarchical Fingertip Space for Multi-fingered Precision Grasping},
+year = {2014},
+ address = {Chicago, US},
+}
