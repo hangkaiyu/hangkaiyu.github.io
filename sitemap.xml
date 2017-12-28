@@ -4,6 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://hangkaiyu.github.io/</loc>
@@ -24,6 +25,12 @@
   <loc>https://hangkaiyu.github.io/contact.html</loc>
 </url>
 <url>
+  <loc>https://hangkaiyu.github.io/pdfs/song2018a.pdf</loc>
+</url>
+<url>
+  <loc>https://hangkaiyu.github.io/pdfs/varava2017a.pdf</loc>
+</url>
+<url>
   <loc>https://hangkaiyu.github.io/pdfs/haustein2017a.pdf</loc>
 </url>
 <url>
@@ -34,9 +41,6 @@
 </url>
 <url>
   <loc>https://hangkaiyu.github.io/pdfs/miao2015a.pdf</loc>
-</url>
-<url>
-  <loc>https://hangkaiyu.github.io/pdfs/varava2017a.pdf</loc>
 </url>
 <url>
   <loc>https://hangkaiyu.github.io/pdfs/hang2016a.pdf</loc>
