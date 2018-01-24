@@ -6,6 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://hangkaiyu.github.io/</loc>
 </url>
@@ -23,6 +24,9 @@
 </url>
 <url>
   <loc>https://hangkaiyu.github.io/contact.html</loc>
+</url>
+<url>
+  <loc>https://hangkaiyu.github.io/pdfs/yuan2018a.pdf</loc>
 </url>
 <url>
   <loc>https://hangkaiyu.github.io/pdfs/song2018a.pdf</loc>
@@ -69,4 +73,6 @@
 <url>
   <loc>https://hangkaiyu.github.io/pdfs/hangkaiyu2013a.pdf</loc>
 </url>
+
+
 </urlset>
