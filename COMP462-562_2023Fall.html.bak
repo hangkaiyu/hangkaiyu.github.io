@@ -30,11 +30,11 @@
           <hr>
 
             <div id="inner">
-               <h3> COMP 462/562: Fundamentals of Robotic Manipulation (Spring 2024)</h3>
+               <h3> COMP 462/562: Fundamentals of Robotic Manipulation (Fall 2023)</h3>
                
                <b>Credits: </b> 3<br>
-               <b>Location: </b> DH 1075<br>
-               <b>Lectures: </b> 4:00PM - 5:15PM MW (8-JAN-2024 - 19-APR-2024) <br>
+               <b>Location: </b> DH 1042<br>
+               <b>Lectures: </b> 4:00PM - 5:15PM MW (21-AUG-2023 - 1-DEC-2023) <br>
 
             
             <hr>
@@ -43,7 +43,7 @@
             
             <hr>
                <b>TA:</b> Kejia Ren (kr43@rice.edu)<br>
-               Office Hours: Tuesday 3pm-4pm at DH 3110
+               Office Hours: Tuesday 3pm-4pm at DH 3110 (location will be different for Oct. 17)
             
             
             <hr>
@@ -79,8 +79,8 @@
               	Late homework submission: 0.5 point will be deducted every day after the due date<br>
               	Late project submission: 1 point will be deducted every day after the due date<br>
               	Project resubmission: everyone can resubmit at most 1 time for each project to improve the points. However, the resubmission will be deducted by 3 points.<br><br>
-              	Grading Scale (462): A (&ge; 90 points), B (&ge; 80 points), C (&ge; 70 points), D (&ge; 60 points), F (<60  points).<br>
-              	Grading Scale (562): A (&ge; 100 points), B (&ge; 90 points), C (&ge; 80 points), D (&ge; 70 points), F (<70  points).<br>
+              	Grading Scale (462): A = 80-110 points, B = 70-80 points, C = 60-70 points, D = 50-60 points, F = below 50 points.<br>
+              	Grading Scale (562): A = 90-110 points, B = 80-90 points, C = 70-80 points, D = 60-70 points, F = below 60 points.<br>
 
 						<hr>
 							<h3>Absence Policies</h3>
@@ -121,10 +121,10 @@
 
 
 				<table border="0" style="width: 100%; text-align:center">
-				<col span="1" style="width: 10%;">
+				<col span="1" style="width: 5%;">
 				<col span="1" style="width: 35%;">
 				<col span="1" style="width: 35%;">
-				<col span="1" style="width: 20%;">
+				<col span="1" style="width: 25%;">
 				<tr>
 				<th>Week of</th>
 				<th>Monday</th>
@@ -134,107 +134,106 @@
 
 
 				<tr>
-				<td>Jan-8</td>
+				<td>8-21</td>
 				<td>Introduction</td>
 				<td>Configuration Space</td>
 				</tr>
 
 				<tr>
-				<td>Jan-15</td>
-				<td><font color="grey">No Class</font></td>
+				<td>8-28</td>
 				<td>Robot Motions 1</td>
-				</tr>
-
-
-				<tr>
-				<td>Jan-22</td>
 				<td>Robot Motions 2</td>
-				<td>Robot Motions 3</td>
 				</tr>
 
 
-
 				<tr>
-				<td>Jan-29</td>
+				<td>9-4</td>
+				<td><font color="grey">Labor Day (No Class)</font></td>
 				<td>Forward Kinematics</td>
+				</tr>
+
+
+
+				<tr>
+				<td>9-11</td>
 				<td>Velocity Kinematics</td>
-				</tr>
-
-
-				<tr>
-				<td>Feb-5</td>
 				<td>Motion Planning 1</td>
-				<td>Inverse Kinematics</td>
 				</tr>
 
 
 				<tr>
-				<td>Feb-12</td>
+				<td>9-18</td>
+				<td>Inverse Kinematics</td>
 				<td>Physics and Simulation</td>
+				</tr>
+
+
+				<tr>
+				<td>9-25</td>
 				<td>Motion Planning 2</td>
+				<td>ROS</td>
 				<td>Project #1 begins</td>
 				</tr>
 
 
 				<tr>
-				<td>Feb-19</td>
-				<td>ROS</td>
+				<td>10-2</td>
+				<td>Kinematics of Closed Chains</td>
 				<td>Midterm Test</td>
 				</tr>
 
 				<tr>
-				<td>Feb-26</td>
-				<td>Kinematics of Closed Chains</td>
+				<td>10-9</td>
+				<td><font color="grey">MidTerm Recess (No Class)</font></td>
 				<td>Contacts and Grasping 1</td>
 				</tr>
 
 
 				<tr>
-				<td>Mar-4</td>
+				<td>10-16</td>
+				<td>Robot Hands</td>
 				<td>Contacts and Grasping 2</td>
-				<td>Dynamics of Open Chains 1</td>
 				<td>Project #2 begins<br>Project #1 Due</td>
 				</tr>
 
 
 
 				<tr>
-				<td>Mar-11</td>
-				<td><font color="grey">No Class</font></td>
-				<td><font color="grey">No Class</font></td>
-				</tr>
-
-				<tr>
-				<td>Mar-18</td>
+				<td>10-23</td>
+				<td>Dynamics of Open Chains 1</td>
 				<td>Dynamics of Open Chains 2</td>
-				<td>Dynamics of Open Chains 3</td>
 				</tr>
 
+				<tr>
+				<td>10-30</td>
+				<td>In-Hand Manipulation</td>
+				<td>Dynamics of Open Chains 3</td>
+				<td></td>
+				</tr>
 
 				<tr>
-				<td>Mar-25</td>
+				<td>11-6</td>
 				<td>Trajectory Generation</td>
 				<td>State Estimation</td>
 				<td>Project #3 begins<br>Project #2 Due</td>
 				</tr>
 
 				<tr>
-				<td>Apr-1</td>
+				<td>11-13</td>
 				<td>Robot Control 1</td>
 				<td>Robot Control 2</td>
 				</tr>
 
 				<tr>
-				<td>Apr-8</td>
-				<td><font color="grey">No Class</font></td>
-				<td>Robot Control 3</td>
-
+				<td>11-20</td>
+				<td>Course Review</td>
+				<td><font color="grey">Thanksgiving (No Class)</font></td>
 				</tr>
 
 				<tr>
-				<td>Apr-15</td>
-				<td>Course Review</td>
+				<td>11-27</td>
 				<td>Final Test</td>
+				<td></td>
 				<td>Project #3 Due</td>
 				</tr>
 
