@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"https://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+    <head>
+        <!-- <meta https-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+        <title>Kaiyu Hang</title>
+        <link rel="shortcut icon" href="pics/RiceIcon.png">
+        <link rel="stylesheet" href="myStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script> 
+        $(function(){
+          $("#commonHeader").load("header.html"); 
+        });
+        $(function(){
+          $("#disclaimer").load("disclaimer.html"); 
+        });
+      </script> 
+        
+    </head>
+    <body>
+      
+
+      <div id="wrapper">
+      
+        <div id="content">
+        <div id="commonHeader"></div>
+
+
+          
+          <hr>
+
+            <div id="inner">
+            <center>
+            <font size="4"><b>
+            <a href="https://www.cse.usf.edu/~yusun/rgmc/2024.html" target="_blank">
+                The 9th Robotic Grasping and Manipulation Competition (RGMC)
+            </a>
+            </b></font><br>
+               IEEE-RAS International Conference on Robotics and Automation (ICRA)<br>
+               Yokohama, Japan, May 13-17, 2024<br>
+               <br>
+               <br>
+           </center>
+
+
+
+
+
+                
+
+                <font size="4"><b>Essential Skill Sub-Track 2: In-Hand Manipulation</b></font><br>
+                Organizers: Kaiyu Hang (main contact), Podshara Chanrungmaneekul<br><br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                The focus of this subtrack is on the in-hand manipulation skills of different robot hands and various manipulation planning and control algorithms. Competition information and scoring criteria are detailed below.<br><br>
+
+                <center><b><u>I. Workspace Setup</u></b></center>
+                &nbsp&nbsp&nbsp&nbsp
+                Every team will bring their own robot hand for the competition. There is no restriction on the design of the hardware. The robot hands can be commercial models, open source models, or models designed the participating teams. The robot hand will be installed on a stationary mount designed by the teams, e.g., the mount can be a robot arm, or a stationary frame that can stably hold the robot hand. The teams can change the hand mounting poses as needed for different tasks. An example hand setup is shown in Fig. 1.<br>
+                
+
+                <figure>
+                    <center>
+                        <img style="margin-bottom:20px; margin-right:20px" align = "center" width="40%" src="pics/RGMC_example_setup.png"/>
+                        <figcaption>Fig. 1: An example hand setup with a camera on top of the object being manipulated.</figcaption>
+                    </center>
+                </figure>
+
+
+                <center><b><u>II. Sensors</u></b></center> 
+                &nbsp&nbsp&nbsp&nbsp
+                Every team is required to use at least one camera that can support the use of 
+                <a href="https://wiki.ros.org/apriltag_ros" target="_blank">
+                    apriltag_ros.
+                </a>
+                As exemplified in Fig. 1, the object being manipulated will be tracked by this camera through an apriltag. As will be detailed below, the scoring of the competition is heavily relying on the apriltags, and the manipulation goals are specified in the camera's view/frame based on the readings of apriltags. Therefore, we do not require specific hand-camera calibration.<br>
+
+
+                &nbsp&nbsp&nbsp&nbsp
+                There is no restriction on the sensors used by teams. Vision sensors, tactile sensors, force/torque sensors, etc., are all welcome to be included in the setups.<br><br>
+
+
+                <center><b><u>III. Hand Control</u></b></center> 
+                &nbsp&nbsp&nbsp&nbsp
+                During the competition, after a team has finished setting up all necessary equipment, the robot hand should run fully autonomously to complete the competition tasks. No teleopration or human intervention will be allowed. In cases where human interventions are needed for safety reasons, that specific run of the competition will be regarded a failure. <br>
+                <br>
+
+                <center><b><u>IV. Competition Objects</u></b></center> 
+
+                &nbsp&nbsp&nbsp&nbsp
+                To make it easy for every team to use the same objects for system development and test, this competition will use 3D printed objects. As shown in Fig. 2, three cynlinders of different sizes and a cube with "A, B, C, D, E, F" written on different facets, together with their CAD models, are provided.<br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                The cylinders are 60mm, 80mm, 100mm in diameters and 100mm tall. The cube is of size 90*90*90 mm<sup>3</sup>. On the cynlinder objects, the is a 30*30*1mm<sup>3</sup> reserved space to attach the apriltags. On the cube object, there are four of such reserved spaces on each facet, but we will only use the one on the top-left of each facet.<br>
+
+
+                &nbsp&nbsp&nbsp&nbsp
+                The models can be downloaded from the
+                <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
+                RGMC_In-Hand_Manipulation_2024 github repository.
+                </a>
+                In addition, there will be one "novel" object at the competition. This "novel" object will be an object of similar sizes to the ones we provided, and will be selected from the 
+                <a href="https://www.ycbbenchmarks.com/object-models/" target="_blank">
+                YCB Object and Model Set.
+                </a>
+
+
+                <figure>
+                    <center>
+                        <img style="margin-bottom:20px; margin-right:20px" align = "center" width="50%" src="pics/RGMC_objects.png"/>
+                        <figcaption>Fig. 2: All objects used in the competition. The "novel" object is not shown here.</figcaption>
+                    </center>
+                </figure>
+
+
+                <center><b><u>V. Competition Tasks</u></b></center>
+                <b>Task A: Object Position Control for Waypoints Tracking</b><br>                    
+                &nbsp&nbsp&nbsp&nbsp
+                The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. Since different teams will have different hand designs, <u>every team will need to grasp a cynliner of only one size of their choice.</u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects.<br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stablized, the object's position (in the camera's frame) will be regarded as (0, 0, 0). Thereafter, a sequence of 10 waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. <br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                Note: There is no restriction on how the obejct should be initially grasped, or in what pose it should be initially grasped. Every team can design their strategies based on their own system.
+
+                <br><br>
+
+
+                <b>Task B: Object Re-orientation</b><br>
+                &nbsp&nbsp&nbsp&nbsp
+                The robot hand will grasp the cube object. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail. The given target sequence will make sure that all letters can be reached in a continuous sequence without the need to go through other intermediate letters.
+
+
+                <br><br>
+
+                <center><b><u>VI. Scoring and Ranking</u></b></center>
+                &nbsp&nbsp&nbsp&nbsp
+                By tracking the apriltag, the organizers will provide a rosnode (evaluator) to automatically evaluate the manipulation performance. The rosnode will be written in Python and will be added to the 
+                <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
+                RGMC_In-Hand_Manipulation_2024 github repository
+                </a>
+                by the beginning of March.<br>
+
+
+                &nbsp&nbsp&nbsp&nbsp
+                For Task A, the evaluator rosnode will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 10-minutes time budget for each run. <br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                For Task B, the evaluator rosnode will simply check how many target facets have been reached. In particular, it will start counting when the first target facet is reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the time used to reach the second facet. Every team will have a 10-minutes time budget for each run. <br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                The scoring system is fully ranking-based. For Task A on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4, 3, 2, and 1 points. The same rule applies to Task A on the "novel" object. For Task B, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                Finally, the ranking of the teams will be based on the total points each team have collected from all tasks.
+
+
+
+               <br>
+               
+
+               <br>
+               <br>
+
+
+
+        </div>
+        
+      <div id="disclaimer"></div>
+      </div>
+
+      
+    </div>
+
+   
+
+
+
+
+		
+    </body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90337871-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
