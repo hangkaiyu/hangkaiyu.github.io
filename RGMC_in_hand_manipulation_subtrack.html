@@ -58,7 +58,7 @@
 
                 <center><b><u>I. Workspace Setup</u></b></center>
                 &nbsp&nbsp&nbsp&nbsp
-                Every team will bring their own robot hand for the competition. There is no restriction on the design of the hardware. The robot hands can be commercial models, open source models, or models designed the participating teams. The robot hand will be installed on a stationary mount designed by the teams, e.g., the mount can be a robot arm, or a stationary frame that can stably hold the robot hand. The teams can change the hand mounting poses as needed for different tasks. An example hand setup is shown in Fig. 1.<br>
+                Every team will bring their own robot hand for the competition. There is no restriction on the design of the hardware. The robot hands can be commercial models, open source models, or models designed the participating teams. The robot hand will be installed on a stationary mount designed by the teams, e.g., the mount can be a stationary frame that can stably hold the robot hand. The teams can change the hand mounting poses as needed for different tasks. An example hand setup is shown in Fig. 1.<br>
                 
 
                 <figure>
@@ -118,7 +118,7 @@
                 <center><b><u>V. Competition Tasks</u></b></center>
                 <b>Task A: Object Position Control for Waypoints Tracking</b><br>                    
                 &nbsp&nbsp&nbsp&nbsp
-                The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. Since different teams will have different hand designs, <u>every team will need to grasp a cynliner of only one size of their choice.</u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects.<br>
+                The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. Since different teams will have different hand designs, <u>every team will need to grasp a cynliner of only one size of their choice.</u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stablized, the object's position (in the camera's frame) will be regarded as (0, 0, 0). Thereafter, a sequence of 10 waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. <br>
@@ -131,12 +131,10 @@
 
                 <b>Task B: Object Re-orientation</b><br>
                 &nbsp&nbsp&nbsp&nbsp
-                The robot hand will grasp the cube object. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
+                The robot hand will grasp the cube object. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail. The given target sequence will make sure that all letters can be reached in a continuous sequence without the need to go through other intermediate letters.
-
-
                 <br><br>
 
                 <center><b><u>VI. Scoring and Ranking</u></b></center>
