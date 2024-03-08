@@ -50,8 +50,9 @@
 
                 <font size="4"><b>Essential Skill Sub-Track 2: In-Hand Manipulation</b></font><br>
                 <b>Organizers:</b> Kaiyu Hang (main contact), Podshara Chanrungmaneekul<br>
-		<b>Judges:</b> Kapil Katyal (Amazon Robotics), Manikantan Nambi (Amazon Robotics), Chaitanya Mitash (Amazon Robotics)<br>
-		<b>Timeline:</b> May 13 (Dry Run), May 15 (Competition Day)<br><br>
+		        <!-- <b>Judges:</b> Kapil Katyal (Amazon Robotics), Manikantan Nambi (Amazon Robotics), Chaitanya Mitash (Amazon Robotics)<br> -->
+		        <b>Timeline:</b> May 13 (Dry Run), May 15 (Competition Day)<br>
+                <b>Competition GitHub Repository:</b> <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">RGMC_In-Hand_Manipulation_2024</a>.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 The focus of this subtrack is on the in-hand manipulation skills of different robot hands and various manipulation planning and control algorithms. Competition information and scoring criteria are detailed below.<br><br>
@@ -90,16 +91,16 @@
                 <center><b><u>IV. Competition Objects</u></b></center> 
 
                 &nbsp&nbsp&nbsp&nbsp
-                To make it easy for every team to use the same objects for system development and test, this competition will use 3D printed objects. As shown in Fig. 2, three cynlinders of different sizes and a cube with "A, B, C, D, E, F" written on different facets, together with their CAD models, are provided.<br>
+                To make it easy for every team to use the same objects for system development and test, this competition will use 3D printed objects. As shown in Fig. 2, three cynlinders of different sizes and two cubes with "A, B, C, D, E, F" written on different facets, together with their CAD models, are provided.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                The cylinders are 60mm, 80mm, 100mm in diameters and 100mm tall. The cube is of size 90*90*90 mm<sup>3</sup>. On the cynlinder objects, the is a 30*30*1mm<sup>3</sup> reserved space to attach the apriltags. On the cube object, there are four of such reserved spaces on each facet, but we will only use the one on the top-left of each facet.<br>
+                The cylinders are 60mm, 80mm, 100mm in diameters and 100mm tall. The cubes are of sizes 60*60*60 mm<sup>3</sup> and 90*90*90 mm<sup>3</sup>. On the cynlinder objects, the is a 30*30*1mm<sup>3</sup> reserved space to attach the apriltags. On the cube object, there are one or four of such reserved spaces on each facet. Please read the details in the GitHub Repository about how to track those objects.<br>
 
 
                 &nbsp&nbsp&nbsp&nbsp
                 The models can be downloaded from the
                 <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
-                RGMC_In-Hand_Manipulation_2024 github repository.
+                RGMC_In-Hand_Manipulation_2024 GitHub Repository.
                 </a>
                 In addition, there will be one "novel" object at the competition. This "novel" object will be an object of similar sizes to the ones we provided, and will be selected from the 
                 <a href="https://www.ycbbenchmarks.com/object-models/" target="_blank">
@@ -121,7 +122,7 @@
                 The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. Since different teams will have different hand designs, <u>every team will need to grasp a cynliner of only one size of their choice.</u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stabilized, the object's position (in the camera's frame) will be regarded as (0, 0, 0). Thereafter, a sequence of 10 waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. <br>
+                The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stabilized, the object's position (in the camera's frame) will be regarded as (0, 0, 0). Thereafter, a sequence of 10 waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. The waypoints are all limited within the range of <b>[-2.5cm, 2.5cm] * [-2.5cm, 2.5cm] * [-2.5cm, 2.5cm]</b> centered at the intial position of the grasped object. An example list of waypoints is provided in the GitHub Repository.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 Note: There is no restriction on how the obejct should be initially grasped, or in what pose it should be initially grasped. Every team can design their strategies based on their own system.
@@ -131,7 +132,7 @@
 
                 <b>Task B: Object Re-orientation</b><br>
                 &nbsp&nbsp&nbsp&nbsp
-                The robot hand will grasp the cube object. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
+                Every team will grasp only <u>one size of cube objects of their choice</u>. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail. The given target sequence will make sure that all letters can be reached in a continuous sequence without the need to go through other intermediate letters.
@@ -139,24 +140,54 @@
 
                 <center><b><u>VI. Scoring and Ranking</u></b></center>
                 &nbsp&nbsp&nbsp&nbsp
-                By tracking the apriltag, the organizers will provide a rosnode (evaluator) to automatically evaluate the manipulation performance. The rosnode will be written in Python and will be added to the 
+                By tracking the apriltag, the organizers will provide a ROS package (auto-evaluator) to automatically evaluate the manipulation performance. The ROS package is hosted on GitHub at: 
                 <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
-                RGMC_In-Hand_Manipulation_2024 github repository
-                </a>
-                by the beginning of March.<br>
+                RGMC_In-Hand_Manipulation_2024</a>.<br>
 
 
                 &nbsp&nbsp&nbsp&nbsp
-                For Task A, the evaluator rosnode will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 10-minutes time budget for each run. <br>
+                For Task A, the auto-evaluator will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 20-seconds time budget for each goal waypoint. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                For Task B, the evaluator rosnode will simply check how many target facets have been reached. In particular, it will start counting when the first target facet is reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the time used to reach the second facet. Every team will have a 10-minutes time budget for each run. <br>
+                For Task B, the auto-evaluator rosnode will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 The scoring system is fully ranking-based. For Task A on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4, 3, 2, and 1 points. The same rule applies to Task A on the "novel" object. For Task B, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                Finally, the ranking of the teams will be based on the total points each team has collected from all tasks.
+                Finally, the ranking of the teams will be based on the total points each team has collected from all tasks.<br><br>
+
+
+
+                <center><b><u>VII. Frequently Asked Questions (Q&A)</u></b></center>
+                <br>
+                <b>Q</b>: Is it allowed to use arm motions or wrist motions to move the object?<br>
+                <b>A</b>: No, the hand should be installed on a stationary mount. Only hand motions, e.g., finger motions, palm motions, are allowed to manipulate the object. If the object is manipulated by any motions external to the hand, the team's performance will not be evaluated.<br><br>
+
+                <b>Q</b>: Can we design an end-effector that holds the object with a fixed grasp and then have the object manipulated by other joints, e.g., revolute or prismatic, external to the grasp?<br>
+                <b>A</b>: Such designs will not be treated as in-hand manipulation, since essentially an "arm or wrist" is used to move the object. If you would like to make sure your hand design is going to be qualified at the competition, you are encouraged to contact the organizers as soon as possible to confirm.<br><br>
+
+                <b>Q</b>: How is a grasp initialized for the competition?<br>
+                <b>A</b>: A human operator should give the object into the robot hand and secure the grasp. There is no need for any autonomous grasping. Once the grasp is secured, the human operator should not touch the setup anymore.<br><br>
+
+                
+
+                <b>Q</b>: Is there any orientation requirement for the tags in Task A?<br>
+                <b>A</b>: No, task A is only evaluated by the positional accuracy. The tag can be arbitrarily oriented in the grasp but it is your team's responsibility to ensure that the tag will be detected by the camera.<br><br>
+
+                <b>Q</b>: Is it allowed to use a palm support, instead of a real grasp, to hold the object during manipulation?<br>
+                <b>A</b>: Yes, palm support is allowed. Essentially, as long as the object is fully held and manipulated by the robot hand, it is considered a valid in-hand manipulation solution.<br><br>
+
+                <b>Q</b>: Where should the camera be installed?<br>
+                <b>A</b>: Every team can install the camera at anywhere within their robot hand's workspace as long as it can see the object being manipulated.<br><br>
+
+
+
+
+
+
+
+
 
 
 
