@@ -142,20 +142,30 @@
                 &nbsp&nbsp&nbsp&nbsp
                 By tracking the apriltag, the organizers will provide a ROS package (auto-evaluator) to automatically evaluate the manipulation performance. The ROS package is hosted on GitHub at: 
                 <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
-                RGMC_In-Hand_Manipulation_2024</a>.<br>
+                RGMC_In-Hand_Manipulation_2024</a>.<br><br>
 
 
-                &nbsp&nbsp&nbsp&nbsp
-                For Task A, the auto-evaluator will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 20-seconds time budget for each goal waypoint. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                For Task B, the auto-evaluator rosnode will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. <br>
+                <b>Task A</b>: The auto-evaluator will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 20-seconds time budget for each goal waypoint. <br>
+                &nbsp&nbsp&nbsp&nbsp
+                There is only one set of 10 waypoints for Task A for both cylinder and novel objects, i.e., same waypoints for both objects. Every team can have 2 runs on each object. For each object, we record both runs but only use the best to rank the teams.<br>
+                &nbsp&nbsp&nbsp&nbsp
+                For incomplete runs, e.g., object drops, teams are ranked by: (total_error/number_of_waypoints_reached). All incomplete runs will be ranked lower than complete runs regardless of the error.<br><br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                <b>Task B</b>: the auto-evaluator will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. <br>
+                &nbsp&nbsp&nbsp&nbsp
+                There is only one set of 10 target facets for Task B. Every team can have 2 runs on their selected cube. We record both runs but only use the best to rank the teams.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 The scoring system is fully ranking-based. For Task A on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4, 3, 2, and 1 points. The same rule applies to Task A on the "novel" object. For Task B, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                Finally, the ranking of the teams will be based on the total points each team has collected from all tasks.<br><br>
+                Finally, the overall ranking of the teams will be based on the total points each team has collected from all tasks. Teams can check out this <a href="RGMC/RGMC_EST2_Scoring_Sheet_Example.pdf" type="application/octet-stream" target="_blank">
+                example scoring sheet</a> for reference.<br><br>
+
+
 
 
 
