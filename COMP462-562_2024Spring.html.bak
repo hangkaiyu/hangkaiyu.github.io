@@ -30,30 +30,28 @@
           <hr>
 
             <div id="inner">
-               <h3> COMP 462/562: Introduction to Modern Robotics (Spring 2025)</h3>
+               <h3> COMP 462/562: Fundamentals of Robotic Manipulation (Spring 2024)</h3>
                
                <b>Credits: </b> 3<br>
-               <!-- <b>Location: </b> DH 1075<br> -->
-               <b>Lectures: </b> 4:00PM - 5:15PM MW (13-JAN-2025 - 25-APR-2025) <br>
+               <b>Location: </b> DH 1075<br>
+               <b>Lectures: </b> 4:00PM - 5:15PM MW (8-JAN-2024 - 19-APR-2024) <br>
 
             
             <hr>
                <b>Instructor:</b> Kaiyu Hang<br>
-               Office Hours: Wednesday 2:30pm-3:30pm at DH 3056
+               Office Hours: Monday 11am-12pm at DH 3056
             
             <hr>
-               <b>TA:</b> Yiting Chen (yc203<_at_>rice.edu)<br>
-               Office Hours: Monday 2:30pm-3:30pm at DH 2014<br>
-               <b>TA:</b> Gaotian Wang (gw23<_at_>rice.edu)<br>
-               Office Hours: Thursday 2:30pm-3:30pm at DH 2014
+               <b>TA:</b> Kejia Ren (kr43@rice.edu)<br>
+               Office Hours: Tuesday 3pm-4pm at DH 3110
             
             
             <hr>
               	<h3>Course Description</h3>
-              	Robots, as seen in many different forms, can help people in various scenarios to improve the efficiency, safety, and quality of task executions. In particular, those robots which can physically interact with the world possess essential skills to engage themselves more comprehensively in the real-world tasks. For example, robots with manipulation skills can help us in factories, kitchens, hospitals, warehouses, construction sites, and even in space or on other planets. This course introduces both fundamental and state-of-the-art knowledge to let students acquire a broad understanding of modern robotics. Topics including robot motions, kinematics, dynamics, simulation and Robot Operating System (ROS), hand and grasping, prehensile and nonprehensile manipulation, robot control, and interactive estimation, will be covered. Programming projects are involved to facilitate converting textbook knowledge to solid hands-on experiences.<br>
-            <!-- <hr> -->
-<!--               	<h3>Prerequisites</h3>
-              	 COMP 321 AND COMP 215<br> -->
+              	Robots, as seen in many different forms, can help people in various application scenarios to improve the efficiency, safety, and quality of task executions. In particular, those robots which can physically interact with the world possess essential skills, called manipulation, to engage themselves more comprehensively in the real-world tasks. For example, robots with manipulation skills can help us in factories, kitchens, hospitals, warehouses, constructions sites, and even in space or on another planet. This course will introduce both fundamental and the state-of-the-art knowledge that enable robots to manipulate in our world. Topics including robot motions, kinematics, dynamics, simulation and ROS, hand and grasping, prehensile and nonprehensile manipulation, robot control, and interactive estimation, will be covered. Significant programming projects are involved to facilitate converting the textbook knowledge to solid hands-on experiences.<br>
+            <hr>
+              	<h3>Prerequisites</h3>
+              	 COMP 321 AND COMP 215<br>
 
             <hr>
               	<h3>Textbook</h3>
@@ -80,7 +78,7 @@
               	Homework assignments (40 points), project assignments (60 points), mid-term test (5 points), and final test (5 points)<br><br>
               	Late homework submission: 0.5 point will be deducted every day after the due date<br>
               	Late project submission: 1 point will be deducted every day after the due date<br>
-              	Project resubmission: everyone can resubmit at most 1 time for each project to improve the points. However, the resubmission will be deducted by 5 points.<br><br>
+              	Project resubmission: everyone can resubmit at most 1 time for each project to improve the points. However, the resubmission will be deducted by 3 points.<br><br>
               	Grading Scale (462): A (&ge; 90 points), B (&ge; 80 points), C (&ge; 70 points), D (&ge; 60 points), F (<60  points).<br>
               	Grading Scale (562): A (&ge; 100 points), B (&ge; 90 points), C (&ge; 80 points), D (&ge; 70 points), F (<70  points).<br>
 
@@ -136,20 +134,20 @@
 
 
 				<tr>
-				<td>Jan-13</td>
+				<td>Jan-8</td>
 				<td>Introduction</td>
 				<td>Configuration Space</td>
 				</tr>
 
 				<tr>
-				<td>Jan-20</td>
+				<td>Jan-15</td>
 				<td><font color="grey">No Class</font></td>
 				<td>Robot Motions 1</td>
 				</tr>
 
 
 				<tr>
-				<td>Jan-27</td>
+				<td>Jan-22</td>
 				<td>Robot Motions 2</td>
 				<td>Robot Motions 3</td>
 				</tr>
@@ -157,21 +155,21 @@
 
 
 				<tr>
-				<td>Fed-3</td>
+				<td>Jan-29</td>
 				<td>Forward Kinematics</td>
 				<td>Velocity Kinematics</td>
 				</tr>
 
 
 				<tr>
-				<td>Feb-10</td>
+				<td>Feb-5</td>
 				<td>Motion Planning 1</td>
 				<td>Inverse Kinematics</td>
 				</tr>
 
 
 				<tr>
-				<td>Feb-17</td>
+				<td>Feb-12</td>
 				<td>Physics and Simulation</td>
 				<td>Motion Planning 2</td>
 				<td>Project #1 begins</td>
@@ -179,20 +177,20 @@
 
 
 				<tr>
-				<td>Feb-24</td>
+				<td>Feb-19</td>
 				<td>ROS</td>
 				<td>Midterm Test</td>
 				</tr>
 
 				<tr>
-				<td>Mar-3</td>
+				<td>Feb-26</td>
 				<td>Kinematics of Closed Chains</td>
 				<td>Contacts and Grasping 1</td>
 				</tr>
 
 
 				<tr>
-				<td>Mar-10</td>
+				<td>Mar-4</td>
 				<td>Contacts and Grasping 2</td>
 				<td>Dynamics of Open Chains 1</td>
 				<td>Project #2 begins<br>Project #1 Due</td>
@@ -201,44 +199,45 @@
 
 
 				<tr>
-				<td>Mar-17</td>
+				<td>Mar-11</td>
 				<td><font color="grey">No Class</font></td>
 				<td><font color="grey">No Class</font></td>
 				</tr>
 
 				<tr>
-				<td>Mar-24</td>
+				<td>Mar-18</td>
 				<td>Dynamics of Open Chains 2</td>
 				<td>Dynamics of Open Chains 3</td>
 				</tr>
 
 
 				<tr>
-				<td>Mar-31</td>
+				<td>Mar-25</td>
 				<td>Trajectory Generation</td>
 				<td>State Estimation</td>
 				<td>Project #3 begins<br>Project #2 Due</td>
 				</tr>
 
 				<tr>
-				<td>Apr-7</td>
+				<td>Apr-1</td>
 				<td>Robot Control 1</td>
 				<td>Robot Control 2</td>
 				</tr>
 
 				<tr>
-				<td>Apr-14</td>
+				<td>Apr-8</td>
+				<td><font color="grey">No Class</font></td>
 				<td>Robot Control 3</td>
-				<td>Invited Talk (Space Robotics)</td>
 
 				</tr>
 
 				<tr>
-				<td>Apr-21</td>
+				<td>Apr-15</td>
 				<td>Course Review</td>
 				<td>Final Test</td>
 				<td>Project #3 Due</td>
 				</tr>
+
 
 				</tr>
 				
