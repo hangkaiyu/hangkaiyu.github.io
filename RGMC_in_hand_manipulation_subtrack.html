@@ -134,7 +134,7 @@
 
                 <b>Task B: Object Re-orientation</b><br>
                 &nbsp&nbsp&nbsp&nbsp
-                Every team will grasp only <u>one size of cube objects of their choice</u>. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
+                Every team will grasp only <u>one size of the cube objects of their choice</u>. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail.<br>
@@ -179,19 +179,19 @@
                 The auto-evalutor will record the execution time for each facet successfully reached and use the sum to rank teams, i.e., faster is better. If the robot fails to reach a facet, e.g., did not reach within the time limit (30 seconds), did not reach within the precision tolerance (0.5 rad), or dropped the object, the task will be terminated and a 30-seconds penalty will be recorded for that failed facet and each remaining facet.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                There is only one set of target facets (known) for Task B1. Every team can have 1 run on their selected cube.<br><br>
+                There is only one set of target facets (known) for Task B1. The task file will assume that the grasped cube is initially configured to show the facet "A". Every team can have 1 run on their selected cube.<br><br>
 
 
                 &nbsp&nbsp&nbsp&nbsp
                 <b>Task B2</b>: Every team will be given a list of unknown facets (different from what is already in the GitHub repo). The auto-evaluator will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. If the robot does not signal to the auto-evaluator that a facet is reached within 30 seconds, the auto-evaluator will switch to the next facet automatically.<br>
                 &nbsp&nbsp&nbsp&nbsp
-                There is only one set of target facets for Task B2. Every team can have 1 run on their selected cube.<br><br>
+                There is only one set of target facets for Task B2. The task file will assume that the grasped cube is initially configured to show the facet "A". Every team can have 1 run on their selected cube.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 <b>Overall scoring and ranking</b>: The scoring system is fully ranking-based. For Task A1 and A2 on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4 to 1 points. The same rule applies to Task A1 and A2 on the "novel" object. For Task B1 and B2, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                Finally, the overall ranking of the teams will be based on the total points each team has collected from all tasks. Teams can check out this <a href="RGMC/RGMC_EST2_Scoring_Sheet_Example.pdf" type="application/octet-stream" target="_blank">
+                Finally, the overall ranking of the teams will be based on the total points each team has collected from all tasks. Teams can check out this <a href="https://github.com/Rice-RobotPI-Lab/rgmc_in_hand_manipulation_2025/blob/main/Scoring%20In-hand%20Manipulation.pdf" type="application/octet-stream" target="_blank">
                 example scoring sheet</a> for reference.<br><br>
 
 
