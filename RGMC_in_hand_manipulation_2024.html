@@ -32,12 +32,12 @@
             <div id="inner">
             <center>
             <font size="4"><b>
-            <a href="https://sites.google.com/view/rgmc2025" target="_blank">
-                The 10th Robotic Grasping and Manipulation Competition (RGMC)
+            <a href="https://www.cse.usf.edu/~yusun/rgmc/2024.html" target="_blank">
+                The 9th Robotic Grasping and Manipulation Competition (RGMC)
             </a>
             </b></font><br>
                IEEE-RAS International Conference on Robotics and Automation (ICRA)<br>
-               Atlanta, USA, May 19-23, 2024<br>
+               Yokohama, Japan, May 13-17, 2024<br>
                <br>
                <br>
            </center>
@@ -49,10 +49,10 @@
                 
 
                 <font size="4"><b>Essential Skill Sub-Track 2: In-Hand Manipulation</b></font><br>
-                <b>Organizers:</b> Kaiyu Hang (Rice), Podshara Chanrungmaneekul (Rice), Joshua T. Grace (Yale), Andrew S. Morgan (RAI Institute)<br>
-		        <!-- <b>Judges:</b> , Kapil Katyal (Amazon Robotics)<br> -->
-		        <b>Timeline:</b> May 19 (Dry Run), May 20-21 (Competition Day)<br>
-                <b>Competition GitHub Repository:</b> <a href="https://github.com/Rice-RobotPI-Lab/rgmc_in_hand_manipulation_2025" target="_blank">rgmc_in_hand_manipulation_2025</a>.<br><br>
+                <b>Organizers:</b> Kaiyu Hang (main contact), Podshara Chanrungmaneekul<br>
+		        <b>Judges:</b> Joshua T. Grace (Yale), Kapil Katyal (Amazon Robotics)<br>
+		        <b>Timeline:</b> May 13 (Dry Run), May 14 (Competition Day)<br>
+                <b>Competition GitHub Repository:</b> <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">RGMC_In-Hand_Manipulation_2024</a>.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 The focus of this subtrack is on the in-hand manipulation skills of different robot hands and various manipulation planning and control algorithms. Competition information and scoring criteria are detailed below.<br><br>
@@ -99,8 +99,8 @@
 
                 &nbsp&nbsp&nbsp&nbsp
                 The models can be downloaded from the
-                <a href="https://github.com/Rice-RobotPI-Lab/rgmc_in_hand_manipulation_2025" target="_blank">
-                rgmc_in_hand_manipulation_2025 GitHub Repository.
+                <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
+                RGMC_In-Hand_Manipulation_2024 GitHub Repository.
                 </a>
                 In addition, there will be one "novel" object at the competition. This "novel" object will be an object of similar sizes to the ones we provided, and will be selected from the 
                 <a href="https://www.ycbbenchmarks.com/object-models/" target="_blank">
@@ -117,17 +117,15 @@
 
 
                 <center><b><u>V. Competition Tasks</u></b></center>
-                <b>Task A: Object Position Control for Waypoints Tracking</b><br>
+                <b>Task A: Object Position Control for Waypoints Tracking</b><br>                    
+                &nbsp&nbsp&nbsp&nbsp
+                The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. Since different teams will have different hand designs, <u>every team will need to grasp a cynliner of only one size of their choice.</u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                The robot hand will grasp a cylinderical object with an apriltag attached at the top of it. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. <u>Every team will need to grasp a cynliner of only one size of their choice. In this task, a "novel object" will be used in addition to the cynliders, so that every team will need to run their system 2 times on both the cynlinder and the "novel" objects. </u> The task is to manipulate the object in-hand so that the apriltag's motion will track given waypoints. <br> 
-
-
-                &nbsp&nbsp&nbsp&nbsp
-                The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stabilized, the object's position (in the camera's frame) will be set as (0, 0, 0). Thereafter, a sequence of waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. The waypoints are all limited within the range of <b>[-2.5cm, 2.5cm] * [-2.5cm, 2.5cm] * [-2.5cm, 2.5cm]</b> centered at the intial position of the grasped object. Example lists of waypoints are provided in the GitHub Repository.<br>
+                The waypoints will be given as a sequence of positions relative to the initial object's (apriltag's) position. Once the initial grasp is stabilized, the object's position (in the camera's frame) will be regarded as (0, 0, 0). Thereafter, a sequence of 10 waypoints (in the camera's frame relative to the aforementioned (0, 0, 0)), in the form of (x, y, z), will be given. The robot hand will then be tasked to fully autonomously move the object (apriltag) through those waypoints one by one. The waypoints are all limited within the range of <b>[-2.5cm, 2.5cm] * [-2.5cm, 2.5cm] * [-2.5cm, 2.5cm]</b> centered at the intial position of the grasped object. An example list of waypoints is provided in the GitHub Repository.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                Note: There will be two subtasks in Task A: Task A1 will focus on the speed and Task A2 will focus on the precision of in-hand manipulation position control. The scoring details can be found in Sec. VI.
+                Note: There is no restriction on how the obejct should be initially grasped, or in what pose it should be initially grasped. Every team can design their strategies based on their own system.
 
                 <br><br>
 
@@ -137,58 +135,31 @@
                 Every team will grasp only <u>one size of cube objects of their choice</u>. The grasp should be initialized by a human operator, e.g., a human operator can give the object into the robot hand. The task is to manipulate the object in-hand so that the cube object will rotate in-hand to match a sequence of required orientations as marked by the "A, B, C, D, E, F" letters.<br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail.<br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                Note: There will be two subtasks in Task B: Task B1 will focus on the speed and Task B2 will focus on the overall capability of in-hand manipulation orientation control. The scoring details can be found in Sec. VI.
-
+                Once the initial grasp is stabilized, the team will be given the sequence of letters to reach one by one. A target letter is considered reached if the apriltag on that target facet is posed to be sufficiently aligned with the "Z" direction of the camera's frame. Skipping letters is not allowed and will potentially make all subsequent letters fail. The given target sequence will make sure that all letters can be reached in a continuous sequence without the need to go through other intermediate letters.
                 <br><br>
 
                 <center><b><u>VI. Scoring and Ranking</u></b></center>
                 &nbsp&nbsp&nbsp&nbsp
                 By tracking the apriltag, the organizers will provide a ROS package (auto-evaluator) to automatically evaluate the manipulation performance. The ROS package is hosted on GitHub at: 
-                <a href="https://github.com/Rice-RobotPI-Lab/rgmc_in_hand_manipulation_2025" target="_blank">
-                rgmc_in_hand_manipulation_2025</a>.<br><br>
+                <a href="https://github.com/Rice-RobotPI-Lab/RGMC_In-Hand_Manipulation_2024" target="_blank">
+                RGMC_In-Hand_Manipulation_2024</a>.<br><br>
 
 
 
                 &nbsp&nbsp&nbsp&nbsp
-                <b>Task A1</b>: Every team will be given a list of known waypoints (same as what is already in the GitHub repo) before the competition. The auto-evaluator will record the motion trajectory of the object (apriltag) and check if the object has reached the given waypoint. In this task, a waypoint is considered as reached if the positional error is within 0.5cm. Every team will have a 20-seconds time budget for each goal waypoint. <br>
-
+                <b>Task A</b>: The auto-evaluator will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 20-seconds time budget for each goal waypoint. <br>
                 &nbsp&nbsp&nbsp&nbsp
-                The auto-evalutor will record the execution time for each waypoint successfully reached and use the sum to rank teams, i.e., faster is better. If the robot fails to reach a waypoint, e.g., did not reach within the time limit (20 seconds), did not reach within the precision tolerance (0.5cm), or dropped the object, the task will be terminated and a 20-seconds penalty will be recorded for that failed waypoint and each remaining waypoint.<br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                There is only one set of waypoints (known) for Task A1 for both cylinder and novel objects, i.e., same waypoints for both objects. Every team can have only 1 run on each object.
-
-                <br><br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                <b>Task A2</b>: Every team will be given a list of unknown waypoints (different from what is already in the GitHub repo). The auto-evaluator will record the motion trajectory of the object (apriltag) and calculate the accumulated errors. Every team will have a 20-seconds time budget for each goal waypoint. If the robot does not signal to the auto-evaluator that a waypoint is reached within 20 seconds, the auto-evaluator will switch to the next waypoint automatically.<br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                There is only one set of waypoints for Task A for both cylinder and novel objects, i.e., same waypoints for both objects. Every team can have 1 run on each object. <br>
-
+                There is only one set of 10 waypoints for Task A for both cylinder and novel objects, i.e., same waypoints for both objects. Every team can have 2 runs on each object. For each object, we record both runs but only use the best to rank the teams.<br>
                 &nbsp&nbsp&nbsp&nbsp
                 For incomplete runs, e.g., object drops, teams are ranked by: (total_error/number_of_waypoints_reached). All incomplete runs will be ranked lower than complete runs regardless of the error.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                <b>Task B1</b>: Every team will be given a list of known facets (same as what is already in the GitHub repo) before the competition. The auto-evaluator will check if the object has reached the given facet. A waypoint is considered reached if the orientation of the cube's goal facet is within 0.5 rad facing the camera. Every team will have a 30-seconds time budget for each goal facet. <br>
+                <b>Task B</b>: the auto-evaluator will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. <br>
+                &nbsp&nbsp&nbsp&nbsp
+                There is only one set of 10 target facets for Task B. Every team can have 2 runs on their selected cube. We record both runs but only use the best to rank the teams.<br><br>
 
                 &nbsp&nbsp&nbsp&nbsp
-                The auto-evalutor will record the execution time for each facet successfully reached and use the sum to rank teams, i.e., faster is better. If the robot fails to reach a facet, e.g., did not reach within the time limit (30 seconds), did not reach within the precision tolerance (0.5 rad), or dropped the object, the task will be terminated and a 30-seconds penalty will be recorded for that failed waypoint and each remaining waypoint.<br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                There is only one set of target facets (known) for Task B1. Every team can have 1 run on their selected cube.<br><br>
-
-
-                &nbsp&nbsp&nbsp&nbsp
-                <b>Task B2</b>: Every team will be given a list of unknown facets (different from what is already in the GitHub repo). The auto-evaluator will simply check how many target facets have been reached. If multiple teams have the same number of successfully reached facets, they will be ranked by the accumulated execution time. Every team will have a 30-seconds time budget for each goal facet. If the robot does not signal to the auto-evaluator that a facet is reached within 30 seconds, the auto-evaluator will switch to the next facet automatically.<br>
-                &nbsp&nbsp&nbsp&nbsp
-                There is only one set of target facets for Task B2. Every team can have 1 run on their selected cube.<br><br>
-
-                &nbsp&nbsp&nbsp&nbsp
-                <b>Overall scoring and ranking</b>: The scoring system is fully ranking-based. For Task A1 and A2 on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4 to 1 points. The same rule applies to Task A1 and A2 on the "novel" object. For Task B1 and B2, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
+                The scoring system is fully ranking-based. For Task A on the cynliner objects, team #1 will collect 5 points, and the teams ranked after will collect 4, 3, 2, and 1 points. The same rule applies to Task A on the "novel" object. For Task B, team #1 will collect 10 points, and the teams ranked after will collect 9 to 1 points. <br>
 
                 &nbsp&nbsp&nbsp&nbsp
                 Finally, the overall ranking of the teams will be based on the total points each team has collected from all tasks. Teams can check out this <a href="RGMC/RGMC_EST2_Scoring_Sheet_Example.pdf" type="application/octet-stream" target="_blank">
